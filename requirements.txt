@@ -1,0 +1,4 @@
+# Install exact deployment package with: python -m pip install -e .
+# API/server: python -m pip install -e ".[api]"
+torch>=2.2
+numpy>=1.24

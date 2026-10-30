@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sfc128-emotion"
+version = "1.0.0"
+description = "SFC-128 REN-T / Floating-gate six-class emotion classifier"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2", "numpy>=1.24"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.110", "uvicorn>=0.27", "pydantic>=2"]
+dev = ["pytest>=7.4", "httpx>=0.25", "fastapi>=0.110", "pydantic>=2"]
+research = ["datasets>=2.18", "matplotlib>=3.7"]
+
+[project.scripts]
+sfc128-emotion = "sfc128_emotion.cli:main"
+
+[tool.setuptools]
+py-modules = [
+ "semantic_floating_ren_t_128",
+ "sfc128_emotion_meanpool_model",
+ "sfc128_emotion_tokenizer",
+ "sfc128_emotion_v2_inference",
+]
+packages = ["sfc128_emotion"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

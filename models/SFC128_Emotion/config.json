@@ -1,0 +1,46 @@
+{
+  "model": {
+    "vocab_size": 1000,
+    "pad_token_id": 0,
+    "decision_token_id": 3,
+    "num_classes": 6,
+    "max_context": 2048,
+    "depth": 128,
+    "hidden_size": 96,
+    "bottleneck_size": 24,
+    "kernel_size": 3,
+    "dilation_cycle": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "ren_groups": 8,
+    "ren_alpha": 0.75,
+    "ren_eps": 1e-06,
+    "ren_affine": true,
+    "use_floating_gate": true,
+    "floating_hidden": 32,
+    "floating_gain_deviation": 0.03,
+    "floating_bias_bound": 0.01,
+    "residual_gain_init": 0.5,
+    "residual_scale_mode": "sqrt",
+    "dropout": 0.0,
+    "embedding_dropout": 0.0,
+    "gradient_checkpointing": false,
+    "label_smoothing": 0.0
+  },
+  "temperature": 1.418506,
+  "max_text_tokens": 128,
+  "input": "ASCII English text; masked mean across all non-pad tokens, no appended decision token",
+  "labels": [
+    "sadness",
+    "joy",
+    "love",
+    "anger",
+    "fear",
+    "surprise"
+  ]
+}

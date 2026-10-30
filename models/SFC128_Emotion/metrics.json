@@ -1,0 +1,282 @@
+{
+  "validation": {
+    "accuracy": 0.869369,
+    "macro_f1": 0.853272,
+    "weighted_f1": 0.869158,
+    "per_class": {
+      "sadness": {
+        "precision": 0.831424,
+        "recall": 0.923636,
+        "f1": 0.875108,
+        "support": 550
+      },
+      "joy": {
+        "precision": 0.924699,
+        "recall": 0.8734,
+        "f1": 0.898317,
+        "support": 703
+      },
+      "love": {
+        "precision": 0.821839,
+        "recall": 0.803371,
+        "f1": 0.8125,
+        "support": 178
+      },
+      "anger": {
+        "precision": 0.835052,
+        "recall": 0.886861,
+        "f1": 0.860177,
+        "support": 274
+      },
+      "fear": {
+        "precision": 0.899441,
+        "recall": 0.759434,
+        "f1": 0.823529,
+        "support": 212
+      },
+      "surprise": {
+        "precision": 0.860759,
+        "recall": 0.839506,
+        "f1": 0.85,
+        "support": 81
+      }
+    },
+    "confusion_matrix": [
+      [
+        508,
+        14,
+        6,
+        18,
+        3,
+        1
+      ],
+      [
+        45,
+        614,
+        17,
+        11,
+        13,
+        3
+      ],
+      [
+        18,
+        8,
+        143,
+        7,
+        1,
+        1
+      ],
+      [
+        15,
+        8,
+        7,
+        243,
+        1,
+        0
+      ],
+      [
+        19,
+        15,
+        1,
+        10,
+        161,
+        6
+      ],
+      [
+        6,
+        5,
+        0,
+        2,
+        0,
+        68
+      ]
+    ],
+    "num_examples": 1998,
+    "matrix_rows_actual_columns_predicted": true,
+    "loss": 0.54146
+  },
+  "test": {
+    "accuracy": 0.863295,
+    "macro_f1": 0.820221,
+    "weighted_f1": 0.863113,
+    "per_class": {
+      "sadness": {
+        "precision": 0.858065,
+        "recall": 0.915663,
+        "f1": 0.885928,
+        "support": 581
+      },
+      "joy": {
+        "precision": 0.910045,
+        "recall": 0.875902,
+        "f1": 0.892647,
+        "support": 693
+      },
+      "love": {
+        "precision": 0.722222,
+        "recall": 0.740506,
+        "f1": 0.73125,
+        "support": 158
+      },
+      "anger": {
+        "precision": 0.849829,
+        "recall": 0.905455,
+        "f1": 0.876761,
+        "support": 275
+      },
+      "fear": {
+        "precision": 0.915344,
+        "recall": 0.772321,
+        "f1": 0.837772,
+        "support": 224
+      },
+      "surprise": {
+        "precision": 0.69697,
+        "recall": 0.69697,
+        "f1": 0.69697,
+        "support": 66
+      }
+    },
+    "confusion_matrix": [
+      [
+        532,
+        19,
+        4,
+        18,
+        6,
+        2
+      ],
+      [
+        31,
+        607,
+        33,
+        8,
+        3,
+        11
+      ],
+      [
+        14,
+        19,
+        117,
+        7,
+        1,
+        0
+      ],
+      [
+        12,
+        4,
+        6,
+        249,
+        3,
+        1
+      ],
+      [
+        25,
+        10,
+        2,
+        8,
+        173,
+        6
+      ],
+      [
+        6,
+        8,
+        0,
+        3,
+        3,
+        46
+      ]
+    ],
+    "num_examples": 1997,
+    "matrix_rows_actual_columns_predicted": true,
+    "loss": 0.567534
+  },
+  "data_audit": {
+    "signature": {
+      "version": 3,
+      "source": "dair-ai/emotion",
+      "revision": "main",
+      "data_mode": "full",
+      "max_text_tokens": 128,
+      "tokenizer_sha256": "9522b24c89443e2b1236edf1df4fd5add1da2e5fdde1ffa8153a4c9555d7f8c1"
+    },
+    "foundation_sha256": "e513e7adca33e7041860f1446264b03ed3faf80835b7ea1a424acfd0d6546e4f",
+    "source_stats": {
+      "split_train": {
+        "source_rows": 16000,
+        "accepted_rows": 16000
+      },
+      "unsplit_train": {
+        "source_rows": 416809,
+        "accepted_rows": 416809
+      },
+      "validation": {
+        "source_rows": 2000,
+        "accepted_rows": 2000
+      },
+      "test": {
+        "source_rows": 2000,
+        "accepted_rows": 2000
+      }
+    },
+    "training_audit": {
+      "heldout_overlap_excluded": 4453,
+      "conflicting_label_excluded": 44654,
+      "duplicate_train_excluded": 15741,
+      "training_rows": 367961,
+      "unique_conflicting_texts": 21866
+    },
+    "validation_duplicates_excluded": 2,
+    "test_overlaps_or_duplicates_excluded": 3,
+    "encoded": {
+      "train": {
+        "examples": 367961,
+        "truncated": 6285,
+        "zero_tokens_skipped": 0,
+        "total_tokens": 18328602,
+        "mean_tokens": 49.81
+      },
+      "validation": {
+        "examples": 1998,
+        "truncated": 28,
+        "zero_tokens_skipped": 0,
+        "total_tokens": 98199,
+        "mean_tokens": 49.15
+      },
+      "test": {
+        "examples": 1997,
+        "truncated": 28,
+        "zero_tokens_skipped": 0,
+        "total_tokens": 99477,
+        "mean_tokens": 49.81
+      }
+    },
+    "label_histograms": {
+      "train": {
+        "sadness": 114961,
+        "joy": 128073,
+        "love": 24136,
+        "anger": 51828,
+        "fear": 39232,
+        "surprise": 9731
+      },
+      "validation": {
+        "sadness": 550,
+        "joy": 703,
+        "love": 178,
+        "anger": 274,
+        "fear": 212,
+        "surprise": 81
+      },
+      "test": {
+        "sadness": 581,
+        "joy": 693,
+        "love": 158,
+        "anger": 275,
+        "fear": 224,
+        "surprise": 66
+      }
+    }
+  },
+  "train_signature": "28186f0d18282de2dcc3303b771892337d59358bc24eeece3a8e85cbf89a7404"
+}

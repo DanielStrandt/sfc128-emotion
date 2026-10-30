@@ -1,0 +1,15 @@
+.git
+.github
+__pycache__
+*.pyc
+.pytest_cache
+.venv
+research
+tests
+docs
+*.zip
+sfc_fineweb_run
+sfc_emotion_v2_run
+**/checkpoint_latest.pt
+**/checkpoint_best_emotion.pt
+**/prepared_data.npz
