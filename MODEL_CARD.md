@@ -9,7 +9,7 @@
 - **Vocabulary:** original custom 1,000-ID ASCII-constrained BPE from FineWeb-Edu pretraining (fixed token IDs; embeddings fully fine-tuned).
 - **Task:** classify short English text into **sadness, joy, love, anger, fear, surprise**.
 - **Outputs:** categorical class probabilities after temperature scaling (T = 1.418506 for the exported experiment).
-- **Weights:** the trained export is included under `models/SFC128_Emotion/` in this prepared repository. Redistribution terms remain undecided; see `LICENSE_REQUIRED.md`.
+- **Weights:** the trained export is included under `models/SFC128_Emotion/` and licensed under Apache-2.0 with this repository; see [`LICENSE`](LICENSE). Third-party dataset and corpus terms remain separate; see [`LICENSE_REQUIRED.md`](LICENSE_REQUIRED.md).
 
 ## Training
 
@@ -79,4 +79,4 @@ Reference model weights are saved by the original Stage 2 trainer as `SFC128_Emo
 
 ## Provenance and permissions
 
-Architecture research and weights belong to their respective creator(s). No open-source license is implied by this package. Review the dataset's current terms and the FineWeb-Edu pretraining sources before distributing pretrained weights or launching commercial services.
+The repository source and included trained export are licensed under Apache-2.0; see [`LICENSE`](LICENSE). This license does not relicense third-party datasets or pretraining corpora. Review their current terms and attribution requirements before redistributing those materials or making downstream rights claims; see [`LICENSE_REQUIRED.md`](LICENSE_REQUIRED.md).

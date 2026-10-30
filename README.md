@@ -188,5 +188,4 @@ See [Inference performance](docs/PERFORMANCE.md) for the matched eager-versus-CU
 
 The FastAPI example has **no authentication or rate limiting**. Bind to localhost during development; add authentication, TLS, request limits and monitoring before exposing it publicly. The Dockerfile is a CPU-first reference image; see [Deployment guide](docs/DEPLOYMENT.md).
 
-**No license has been assumed for your research code or weights.** Review [LICENSE_REQUIRED.md](LICENSE_REQUIRED.md) before publishing a public repository. Also verify the dataset and pretrained-data usage terms applicable to distributing the checkpoint. A GitHub repository can remain private while you decide on licensing.
-
+The repository source and included trained export are licensed under [Apache-2.0](LICENSE). This license does not apply to third-party datasets or pretraining corpora; review their current terms and attribution requirements before redistributing those materials or making downstream rights claims. See [data provenance notes](LICENSE_REQUIRED.md).

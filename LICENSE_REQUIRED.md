@@ -1,13 +1,7 @@
-# License decision needed before public release
+# Third-party data and provenance review
 
-This package has intentionally **not** been assigned an open-source license. The project owner must choose a license for source code and separately decide how/if to license the trained model weights. Do not treat absence of a license as permission to copy, redistribute, or commercialize the software or weights.
+The project source code and included SFC-128 Emotion v2 export are licensed under Apache-2.0; see [`LICENSE`](LICENSE). That license applies to this repository's contributions and does not grant rights to third-party datasets, source corpora, or other separately licensed material.
 
-Before making a public repository:
+The model was fine-tuned on `dair-ai/emotion` and its foundation was pretrained using FineWeb-Edu. Review the current terms, attribution requirements, and any applicable restrictions for those materials before redistributing datasets or making claims about downstream rights. The datasets themselves are not included in this repository. The inference export is included.
 
-1. Choose a code license and add `LICENSE` with the correct copyright holder and terms.
-2. Choose whether the trained `model.pt` is to be published, under what license, and whether model distribution is permitted under applicable data/model terms.
-3. Review dataset and corpus terms, attribution and privacy considerations for `dair-ai/emotion` and FineWeb-Edu.
-4. Review any third-party contributions before applying a license.
-5. Complete the model card's ownership and contact fields as needed.
-
-A private repository can be created while these decisions are pending. Nothing in the sample Docker/API deployment authorizes public or high-stakes use.
+The reported test result is an exploratory development result because the held-out test was inspected before training finished and repeated after completion. See the evaluation-protocol disclosure in [`MODEL_CARD.md`](MODEL_CARD.md). Nothing in the sample Docker/API deployment authorizes high-stakes use.

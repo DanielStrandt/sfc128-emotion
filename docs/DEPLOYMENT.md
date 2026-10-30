@@ -67,7 +67,7 @@ Measurements are synchronized on CUDA and include tokenization, batching, model 
 
 ## 6. GitHub repo publication
 
-From the extracted folder (after deciding how you want to license and distribute weights):
+From the extracted folder:
 
 ```powershell
 git init
@@ -81,5 +81,4 @@ git add .
 git commit -m "Initial SFC-128 Emotion v2 repository"
 ```
 
-You can publish a **private** repository first. The exported model is ~3MB in raw float32 parameters plus metadata and is generally small enough for ordinary Git, but verify the actual exported file size and platform limits; Git LFS is optional. When making the repo public, decide both a source-code license and a separate weight-redistribution policy, and verify your applicable dataset/corpus rights. Do not paste sensitive paths, tokens or private training data into issues or commits.
-
+The source and included model export are distributed under Apache-2.0 (see the repository `LICENSE`). The exported model is ~3MB in raw float32 parameters plus metadata and is generally small enough for ordinary Git, but verify the actual exported file size and platform limits; Git LFS is optional. Dataset and pretraining-corpus rights remain separate; review their terms and attribution requirements before redistributing those materials or making downstream rights claims. Do not paste sensitive paths, tokens or private training data into issues or commits.
